@@ -11,7 +11,7 @@ function Home() {
     <PageLayout title={mT("uiKit")}>
       <FlexColumn height="max-content" padding width="100%">
         <PageLayout title={t("white")}>
-          <Flex padding height="max-content" width="100%">
+          <Flex padding height="max-content">
             <ColorCard color="#ffffff" description="Primary" bordered />
             <ColorCard color="#fbfcfe" description="light gray" bordered />
             <ColorCard color="#f3f7fd" description="details" />
