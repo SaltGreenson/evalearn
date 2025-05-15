@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+}
+
+.container.small {
+  transform: scale(1);
+}
+
+.container.medium {
+  transform: scale(1.2);
+}
+
+.container.large {
+  transform: scale(1.4);
+}
+
+.loaderContainer {
+  position: relative;
+}
+
+.small {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+
+.logo {
+  position: absolute;
+  left: 6px;
+  top: 8px;
+  width: 20px;
+  height: 16px;
+}

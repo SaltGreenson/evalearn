@@ -1,0 +1,43 @@
+.paginator {
+  background-color: var(--color-placeholder);
+  border: 2px solid var(--color-placeholder);
+  border-radius: 8px;
+  padding: 0 4px;
+  gap: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.itemsContainer {
+  height: 100%;
+  background-color: var(--color-primary);
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.btn {
+  width: 26px;
+  height: 26px;
+}
+
+.btn.active button {
+  background-color: var(--color-placeholder);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginatorContainer {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}

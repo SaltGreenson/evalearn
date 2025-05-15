@@ -1,0 +1,73 @@
+.selectContainer {
+  max-height: max-content;
+}
+
+.select {
+  position: relative;
+}
+
+.item {
+  min-height: 40px;
+  background-color: var(--color-primary);
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+.itemList {
+  top: 104%;
+  width: 100%;
+  z-index: 4;
+  position: absolute;
+  max-height: 200px;
+  animation: appear 0.3s ease-out;
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: var(--shadow-bottom);
+}
+
+.itemList .item:first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.itemList .item:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.itemList .item:not(:last-child) {
+  border-bottom-width: 0;
+}
+
+@media (min-width: 768px) {
+  .item:hover {
+    cursor: pointer;
+    background-color: var(--color-light);
+  }
+}
+
+.item.active {
+  background-color: var(--color-menu-active);
+}
+
+@keyframes appear {
+  0% {
+    max-height: 0px;
+    overflow-y: hidden;
+  }
+
+  100% {
+    max-height: 200px;
+  }
+}
+
+.emptyItem {
+  pointer-events: none;
+}
+
+.icon path {
+  fill: var(--color-primary);
+}

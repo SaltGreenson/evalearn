@@ -1,0 +1,66 @@
+.flexColumn,
+.flex {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.flex {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.flexItem {
+  flex: 1;
+}
+
+.flexColumn {
+  flex: 1;
+  max-width: max-content;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .flexColumn {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+}
+
+.padding {
+  padding: 10px;
+}
+
+.leftPadding {
+  padding-left: 10px;
+}
+.rightPadding {
+  padding-right: 10px;
+}
+.bottomPadding {
+  padding-bottom: 10px;
+}
+.topPadding {
+  padding-top: 10px;
+}
+
+.excludeTopPadding {
+  padding-top: 0;
+}
+
+.centerH {
+  align-items: center;
+}
+
+.centerV {
+  justify-content: center;
+}
+
+.betweenH {
+  justify-content: space-between;
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}

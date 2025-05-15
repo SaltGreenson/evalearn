@@ -1,0 +1,29 @@
+.colorCard {
+  border-radius: 12px;
+  transition: all 0.1s ease-in-out;
+  width: 130px;
+  height: 70px;
+  position: relative;
+  border: 1px solid transparent;
+  min-width: max-content;
+}
+
+.bordered {
+  border-color: var(--border-color);
+}
+
+.colorCard.small {
+  width: 110px;
+  height: 50px;
+}
+
+.colorCard:hover {
+  box-shadow: var(--shadow-bottom);
+  transform: scale(1.05);
+}
+
+.colorText {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}

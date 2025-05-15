@@ -1,0 +1,52 @@
+:root {
+  /* colors */
+
+  --border-color: #e8edf8;
+  --color-light-blue: #8a91b1;
+  --font-color: #6b6b75;
+  --color-primary: #ffffff;
+  --color-light: #f3f7fd;
+  --color-placeholder: #d2ddff;
+  --color-background: #f6f9ff;
+  --color-main: #3a3a41;
+  --color-menu-background: #f0f4ff;
+  --color-menu-border: #e4eafa;
+  --color-menu-active: #d2ddff;
+  --color-details: #f3f7fd;
+  --color-gray: #506271;
+  --color-light-gray: #fbfcfe;
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --color-blue: #002395;
+  --color-blue-hover: #0033c0;
+  --color-blue-disabled: #e8edf8;
+
+  --color-red: #ff3b30;
+  --color-red-hover: #ff4640e5;
+  --color-red-disabled: #d30d03;
+  --color-red-light: #ffaaa6;
+
+  --color-orange: #ff9500;
+  --color-orange-hover: #ff9500d5;
+  --color-orange-disabled: #b86b00;
+
+  --color-green: #34c759;
+  --color-green-hover: #34c759de;
+  --color-green-disabled: #009625;
+  --color-green-light: #acffc1;
+
+  /* shadow */
+
+  --shadow-right: 3px 3px 12px rgba(0, 0, 0, 0.3);
+  --shadow-bottom: 0 4px 10px rgba(0, 0, 0, 0.2);
+  --shadow-top: 0 -4px 10px rgba(0, 0, 0, 0.2), 4px 0 10px rgba(0, 0, 0, 0.2),
+    -4px 0 10px rgba(0, 0, 0, 0.2);
+  --shadow-inset: inset 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+  /* html {
+    color-scheme: dark;
+  } */
+}

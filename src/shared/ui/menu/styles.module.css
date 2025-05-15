@@ -1,0 +1,137 @@
+.container {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  left: -140px;
+  top: 0;
+  background-color: var(--color-menu-background);
+  border-right: 1px solid var(--color-menu-border);
+  padding: 0;
+  overflow-y: auto;
+  transition: 0.2s ease-out left;
+  z-index: 5;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.container.open {
+  left: 0;
+}
+
+.logo {
+  width: 100px;
+}
+
+.items {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+
+  transition: 0.2s ease-out padding, 0.2s ease-out gap;
+}
+
+.items.open {
+  gap: 5px;
+  padding: 5px;
+}
+
+.userPreviewContainer {
+  padding: 5px;
+}
+
+.linkItem,
+.header {
+  width: 100%;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0;
+  background-color: transparent;
+  min-height: 60px;
+
+  transition: 0.1s ease-out border-radius, 0.1s ease-out background-color;
+}
+
+.iconContainer {
+  margin-left: 10px;
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1);
+
+  transition: 0.1s ease-in-out transform;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .linkItem:hover,
+  .header:hover {
+    cursor: pointer;
+    background-color: var(--color-blue-disabled);
+  }
+
+  .header:hover .headerArrow:not(.open) {
+    animation: right-shaking 0.2s ease-out forwards;
+  }
+
+  .header:hover .headerArrow.open {
+    animation: left-shaking 0.2s ease-out forwards;
+  }
+
+  .linkItem:hover .iconContainer {
+    transform: scale(1.1);
+  }
+}
+
+.linkItem.open {
+  border-radius: 8px;
+}
+
+.linkItem.active {
+  background-color: var(--color-menu-active);
+}
+
+.headerArrow {
+  transform: rotate(0);
+  transition: 0.2s ease-in-out transform;
+}
+
+.headerArrow.open {
+  transform: rotate(180deg);
+}
+
+@keyframes right-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes left-shaking {
+  0% {
+    transform: translateX(0) rotate(180deg);
+  }
+  50% {
+    transform: translateX(-10px) rotate(180deg);
+  }
+  100% {
+    transform: translateX(0) rotate(180deg);
+  }
+}

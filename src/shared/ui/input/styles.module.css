@@ -1,0 +1,221 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.input_container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.danger {
+  border-color: var(--color-red);
+}
+
+.label.danger {
+  color: var(--color-red);
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  max-height: 44px;
+  border-radius: 8px;
+  border: 2px solid;
+  padding: 15px 12px;
+  font-size: 14px;
+  line-height: 155%;
+  transition: 0.1s ease-out border-color;
+  color: var(--font-color);
+  outline: none !important;
+  text-align: left !important;
+}
+
+.input:not(.danger) {
+  border-color: var(--border-color);
+}
+
+.input {
+  border-color: var(--color-red);
+}
+
+.label {
+  border-top: 2px solid;
+  border-color: transparent;
+  border-radius: 16px;
+  z-index: 1;
+  font-size: 14px;
+  color: var(--color-light-blue);
+  padding: 4px 4px 0 4px;
+  background-color: var(--color-primary);
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  pointer-events: none;
+  user-select: none;
+  transition: 0.1s ease-out top, 0.1s ease-out font-size,
+    0.1s ease-out border-color;
+}
+
+.input:disabled {
+  pointer-events: none;
+  user-select: none;
+  background-color: var(--color-light);
+  border-color: transparent;
+  color: var(--color-black);
+}
+
+.input:not(:placeholder-shown):not(.danger) + .label:not(.danger),
+.input:focus:not(.danger) + .label:not(.danger) {
+  border-color: var(--border-color);
+}
+
+.input.danger:not(:placeholder-shown) + .label.danger,
+.input.danger:focus + .label.danger {
+  border-color: var(--color-red);
+}
+
+.input:active:not(.danger),
+.input:focus:not(.danger),
+.input:focus:not(.danger) + .label:not(.danger) {
+  border-color: var(--color-light-blue);
+}
+
+.input:focus:not(.danger) + .label + .icon path {
+  fill: var(--color-light-blue);
+}
+
+.input:focus:not(.danger) + .label + .description span {
+  color: var(--color-light-blue) !important;
+}
+
+.input:active:not(.danger) + .label + .icon path {
+  fill: var(--color-light-blue);
+}
+
+.input:active:not(.danger) + .label + .description span {
+  color: var(--color-light-blue);
+}
+
+.input.danger:active,
+.input.danger:focus {
+  border-color: var(--color-red);
+}
+
+.input:focus:not(.danger) + .label:not(.danger) {
+  border-color: var(--color-light-blue);
+}
+
+.input.danger:focus + .label.danger {
+  border-color: var(--color-red);
+  color: var(--color-red);
+}
+
+.input:disabled + .label {
+  border-color: transparent !important;
+  background-color: var(--color-light);
+}
+
+.input:not(:placeholder-shown) + .label,
+.input:focus + .label {
+  top: -10px;
+  font-size: 12px;
+}
+
+.input:focus::placeholder {
+  color: var(--color-placeholder);
+}
+
+.input::placeholder {
+  color: transparent;
+  user-select: none;
+}
+
+.input_icon {
+  padding-right: 34px;
+}
+
+.icon {
+  position: absolute;
+  right: 6px;
+}
+
+.description {
+  position: absolute;
+  right: 6px;
+}
+
+.icon path {
+  fill: var(--border-color);
+  transition: 0.1s ease-out fill;
+}
+
+.description span {
+  color: var(--border-color) !important;
+  transition: 0.1s ease-out fill;
+}
+
+.input:disabled + .label + .icon path {
+  fill: var(--font-color) !important;
+}
+
+.input:disabled + .label + .description span {
+  color: var(--font-color) !important;
+}
+
+.input.danger + .label + .icon path {
+  fill: var(--color-red);
+}
+
+.input.danger + .label + .description span {
+  color: var(--color-red) !important;
+}
+
+.input + .label + .icon.clickable_icon {
+  cursor: pointer;
+}
+
+.input + .label + .description.clickable_description {
+  cursor: pointer;
+}
+
+.input:not(.danger) + .label + .icon.clickable_icon:hover path {
+  fill: var(--color-light-blue);
+}
+
+.input:not(.danger) + .label + .description.clickable_description:hover span {
+  color: var(--color-light-blue) !important;
+}
+
+.input.danger {
+  animation: horizontal-shaking 0.1s ease-out forwards;
+}
+
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

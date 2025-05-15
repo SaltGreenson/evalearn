@@ -1,0 +1,36 @@
+.text {
+  color: var(--font-color);
+}
+
+.light {
+  color: var(--color-light-blue);
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.text.title {
+  color: var(--color-main);
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.text.large {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.text.medium {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.text.small {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

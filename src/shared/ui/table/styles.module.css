@@ -1,0 +1,146 @@
+.table {
+  width: 100%;
+  height: 100%;
+  border-spacing: 0;
+  position: relative;
+  background-color: var(--color-primary);
+}
+
+.container {
+  overflow: auto;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  border: 2px solid var(--color-light-gray);
+  background-color: var(--color-light-gray);
+}
+
+.small {
+  max-height: 200px;
+}
+
+.medium {
+  max-height: 500px;
+}
+
+.large {
+  height: 100%;
+}
+
+.head {
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-color: var(--color-light-gray);
+  z-index: 3;
+}
+
+.headItem:not(.statusHead):first-child {
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-color: var(--color-light-gray);
+}
+
+.statusHead + .headItem {
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-color: var(--color-light-gray);
+}
+
+.bodyItem {
+  background-color: var(--color-light-gray);
+}
+
+.bodyItem:not(.statusRow):first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+
+.statusRow + .bodyItem {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+
+.headItem:not(.statusRow):first-child,
+.bodyItem:not(.statusRow):first-child {
+  padding-left: 20px;
+}
+
+.headItem,
+.bodyItem {
+  text-align: left;
+  padding: 10px 20px 5px 2px;
+}
+
+.body .bodyRow:nth-child(2n) .bodyItem {
+  background-color: var(--color-light);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.bodyRow:hover .bodyItem {
+  background-color: var(--color-blue-disabled) !important;
+}
+
+.textContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+
+.body {
+  filter: blur(0);
+
+  transition: 0.1s ease-out filter;
+}
+
+.blur {
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+.hideScroll {
+  overflow: hidden;
+}
+
+.emptyRowContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.emptyRowIconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.statusRow {
+  padding: 2px 0;
+  padding-right: 8px;
+}
+
+.statusRowContent {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 20px;
+  height: 100%;
+}

@@ -1,0 +1,132 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.error {
+  border: 2px solid var(--color-red);
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.button {
+  outline: none;
+  border: none;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  user-select: none;
+  padding: 5px;
+  color: var(--color-gray);
+  transition: 0.1s ease-out background-color, 0.1s ease-out box-shadow;
+}
+
+.padding {
+  padding: 12px;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.capitalize {
+  text-transform: uppercase;
+}
+
+.button:active .content {
+  transition: 0.1s ease-out transform;
+  transform: scale(1.05);
+}
+
+.content {
+  width: 100%;
+}
+
+.icon + .content {
+  width: unset;
+}
+
+.button:hover {
+  box-shadow: var(--shadow-bottom);
+}
+
+.blue {
+  background-color: var(--color-blue);
+  color: var(--color-primary);
+}
+
+.blue:disabled {
+  background-color: var(--color-blue-disabled);
+}
+
+.button.blue:hover {
+  background-color: var(--color-blue-hover);
+}
+
+.red {
+  background-color: var(--color-red);
+  color: var(--color-primary);
+}
+
+.red:disabled {
+  background-color: var(--color-red-light);
+}
+
+.button.red:hover {
+  background-color: var(--color-red-hover);
+}
+
+.orange {
+  background-color: var(--color-orange);
+  color: var(--color-primary);
+}
+
+.orange:disabled {
+  background-color: var(--color-orange-disabled);
+}
+
+.button.orange:hover {
+  background-color: var(--color-orange-hover);
+}
+
+.green {
+  background-color: var(--color-green);
+  color: var(--color-primary);
+}
+
+.button.green:hover {
+  background-color: var(--color-green-hover);
+}
+
+.button:disabled {
+  pointer-events: none;
+}
+
+.transparent {
+  background-color: transparent;
+  max-width: max-content;
+  max-height: max-content;
+}
+
+.bordered {
+  background-color: transparent;
+  border: 1px solid var(--color-blue-disabled);
+}
+
+.icon path {
+  fill: var(--color-primary);
+}
+
+.large {
+  width: 100%;
+  height: 100%;
+  max-width: unset;
+  max-height: unset;
+  flex: 1;
+}
