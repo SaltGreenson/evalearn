@@ -35,16 +35,16 @@ export const menuElements = ({
     label: t("lesson3"),
     isActive: isActive("/lesson-3"),
   },
-  {
-    handleRedirect: handleRedirect("/lesson-4"),
-    icon: "4",
-    label: t("lesson4"),
-    isActive: isActive("/lesson-4"),
-  },
-  {
-    handleRedirect: handleRedirect("/lesson-5"),
-    icon: "5",
-    label: t("lesson5"),
-    isActive: isActive("/lesson-5"),
-  },
+  // {
+  //   handleRedirect: handleRedirect("/lesson-4"),
+  //   icon: "4",
+  //   label: t("lesson4"),
+  //   isActive: isActive("/lesson-4"),
+  // },
+  // {
+  //   handleRedirect: handleRedirect("/lesson-5"),
+  //   icon: "5",
+  //   label: t("lesson5"),
+  //   isActive: isActive("/lesson-5"),
+  // },
 ];
