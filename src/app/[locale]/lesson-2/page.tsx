@@ -63,8 +63,11 @@ function Lesson2Page() {
         </VariantCard>
 
         <VariantCard head={t("variant3")}>
-          {renderItem(15, undefined, 15, undefined)}
+          {renderItem(15, undefined, 15, undefined, 1, "--color-green")}
+          {renderItem(75, undefined, 15, undefined, 1, "--color-green")}
           {renderItem(45, undefined, 45, undefined, 2, "--color-red")}
+          {renderItem(15, undefined, 75, undefined, 1, "--color-green")}
+          {renderItem(75, undefined, 75, undefined, 1, "--color-green")}
         </VariantCard>
 
         <VariantCard head={t("variant4")}>
