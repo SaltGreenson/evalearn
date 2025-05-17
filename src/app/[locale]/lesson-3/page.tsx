@@ -16,7 +16,7 @@ function Lesson3Page() {
 
   return (
     <ProfileLayout
-      title={t("title")}
+      title={mT("lesson3")}
       preview={
         <ProfilePreview title={[{ label: t("previewTitle") }]}>
           <FlexColumn width="100%">
