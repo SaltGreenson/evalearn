@@ -1,6 +1,6 @@
-import React, { PropsWithChildren } from "react";
-import styles from "./styles.module.css";
 import clsx from "clsx";
+import { PropsWithChildren } from "react";
+import styles from "./styles.module.css";
 
 type Props = {
   padding?: boolean;
@@ -17,7 +17,7 @@ type Props = {
   gap?: number;
   justifyEnd?: boolean;
 } & PropsWithChildren;
-type ColumnProps = Props;
+type ColumnProps = Props & { fullSizeMobile?: boolean };
 
 const getWidth = (width?: number | string) => {
   if (!Boolean(width)) {
@@ -110,11 +110,16 @@ export const FlexColumn = ({
   width,
   height,
   gap,
+  fullSizeMobile,
   ...styleProps
 }: ColumnProps) => {
   return (
     <div
-      className={clsx(styles.flexColumn, getClassName(styleProps))}
+      className={clsx(
+        styles.flexColumn,
+        fullSizeMobile && styles.fullSizeMobile,
+        getClassName(styleProps)
+      )}
       style={{
         ...getWidth(width),
         ...getHeight(height),

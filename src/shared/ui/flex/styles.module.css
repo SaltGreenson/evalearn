@@ -22,7 +22,7 @@
 }
 
 @media (max-width: 768px) {
-  .flexColumn {
+  .flexColumn.fullSizeMobile {
     width: 100% !important;
     min-width: 100% !important;
   }

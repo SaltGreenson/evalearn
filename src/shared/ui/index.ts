@@ -22,3 +22,4 @@ export * from "./sidebar";
 export * from "./table";
 export * from "./tabs";
 export * from "./text";
+export * from "./variant-card";
