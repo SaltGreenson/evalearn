@@ -23,7 +23,7 @@
     "descriptionColor": "Устанавливает цвет текста",
     "descriptionNowrap": "Устанавливает значение text-wrap",
     "descriptionLinkTo": "После нажатия на текст, переходишь по переданной ссылке",
-    "textExample": "Сегодня хорошая погода чтобы погулять",
+    "textExample": "EVALEARN",
     "textLinkExample": "Нажми на меня",
     "variant1": "По умолчанию",
     "variant2": "bold",
@@ -33,7 +33,7 @@
     "variant6": "size large",
     "variant7": "size title",
     "variant8": "weight 900",
-    "variant9": "linkTo https://google.com",
+    "variant9": "linkTo google",
     "variant10": "color red"
   },
   "Lesson1": {
