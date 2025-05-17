@@ -1,6 +1,42 @@
 {
   "Menu": {
-    "uiKit": "UI Kit"
+    "uiKit": "UI Kit",
+    "lesson3": "Шрифт, компонента \"Text\""
+  },
+  "Lesson3": {
+    "title": "Шрифт",
+    "task": "Cоздать переиспользуемую компоненту \"Text\". Использовать шрифт GraphikLCG. Цвет текста FONT COLOR",
+    "previewTitle": "Компонента \"Text\"",
+    "name": "Название props",
+    "value": "Значение",
+    "description": "Описание",
+    "valueNumber": "number",
+    "valueBoolean": "boolean",
+    "valueString": "string",
+    "descriptionWeight": "Устанавливает значение font-weight",
+    "valueSize": "\"large\" | \"medium\" | \"small\" | \"title\"",
+    "descriptionSize": "Устанавливает значение font-size",
+    "descriptionBold": "Устанавливает значение font-weight в 700",
+    "descriptionLight": "Устанавливает значение font-weight в 200 и меняет цвет на LIGHT BLUE",
+    "descriptionColor": "Устанавливает цвет текста",
+    "descriptionNowrap": "Устанавливает значение text-wrap",
+    "descriptionLinkTo": "После нажатия на текст, переходишь по переданной ссылке",
+    "textExample": "Сегодня хорошая погода чтобы погулять",
+    "textLinkExample": "Нажми на меня",
+    "variant1": "По умолчанию",
+    "variant2": "bold",
+    "variant3": "light",
+    "variant4": "size small",
+    "variant5": "size medium",
+    "variant6": "size large",
+    "variant7": "size title",
+    "variant8": "weight 900",
+    "variant9": "linkTo https://google.com",
+    "variant10": "color red"
+  },
+  "Lesson2": {
+    "title": "Шрифт",
+    "task": "Необходимо создать переиспользуемую компоненту \"Text\". Шрифт GraphikLCG"
   },
   "UiKit": {
     "white": "Белый и серый",

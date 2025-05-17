@@ -96,6 +96,11 @@ function Home() {
                   fontColor="--color-primary"
                 />
                 <ColorCard
+                  color="#6b6b75"
+                  description="font color"
+                  fontColor="--color-primary"
+                />
+                <ColorCard
                   color="#506271"
                   description="gray"
                   fontColor="--color-primary"
